@@ -1,0 +1,164 @@
+/*#GENERAL*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+h1{
+
+    font-family: "dejanire-headline", serif;
+    font-weight: 900;
+}
+p{
+    font-family: "candara";
+    font-weight: 400;
+    font-size: 1.5em;
+
+}
+.second, .third, .fourth{
+    min-height: 100vh;
+}
+/*#ENDGENERAL */
+
+/* Styling for navigation bar */
+
+.navbar{
+    width: 100%;
+    height: 4.2em;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background: #f2f2f2;
+    z-index: 1000;
+    transition: all 0.3s ease 0s;
+}
+/*-----SCROLL STUFF----*/
+.scroll-down .navbar{
+    transform: translate3d(0, -100%, 0);
+}
+.scroll-up .navbar{
+    filter: drop-shadow(0 -10px 20px #171717);
+}
+/*-----END OF SCROLL STUFF----*/
+.navbar .logo a{
+    font-family: 'dejanire-headline', serif;
+    font-weight: 900;
+    font-size: 4em;
+    color: #fa4932;
+}
+.nav_links ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_links li a{
+    font-family: 'candara';
+    font-weight: 900;
+    font-size: 1em;
+    color:#171717;
+    padding: 0 2vw;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: #fa4932;
+}
+.cv_button{
+    font-family: 'candara';
+    font-weight: 900;
+    padding: 8px 23px;
+    color: white;
+    background: #171717;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.cv_button:hover{
+    background: #fa4932;
+}
+
+
+/* Styling for page 1 panel */
+.first{
+    height: 40vw;
+    background: #F2F2F2;
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.first .main_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10%;
+}
+.intro{
+    width: 55%;
+    text-align: left;
+}
+.image_content img{
+    filter: grayscale();
+    width: 390px;
+    height: 390px;
+    border-radius: 50%;
+}
+.first h1 span{
+    color: #fa4932;
+    margin: 0;
+}
+.first h1{
+    font-size: 6em;
+    color: #171717;
+    margin: 0;
+}
+.intro_content p{
+    
+    line-height: 1.4em;
+}
+
+
+/* Styling for page 2 panel */
+.second{
+    width: 100%;
+    display: flex;
+    background: #fa4932;
+}
+.second h1 {
+    font-size: 10em;
+    color: #f2f2f2;
+    margin: auto;
+}
+
+/* Styling for page 3 panel */
+
+.third{
+    width: 100%;
+    display: flex;
+    background: #f2f2f2;
+}
+.third h1 {
+    font-size: 10em;
+    color: #fa4932;
+    margin: auto;
+}
+
+
+/* Styling for page 4 panel */
+.fourth{
+    width: 100%;
+    display: flex;
+    background: #171717;
+}
+.fourth h1 {
+    font-size: 10em;
+    color: #fa4932;
+    margin: auto;
+}
+
