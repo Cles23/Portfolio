@@ -6,6 +6,9 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+.body{
+    background: #EDE7DE;
+}
 h1{
 
     font-family: "dejanire-headline", serif;
@@ -19,6 +22,7 @@ p{
 }
 .second, .third, .fourth{
     min-height: 100vh;
+    max-height: 100vh;
 }
 /*#ENDGENERAL */
 
@@ -119,9 +123,22 @@ p{
 .second{
     width: 100%;
     display: flex;
-    background: #ad392a;
+    background: #EDE7DE;
+    border-radius: 0%;
+    justify-content: center;
+    align-items: center;
 }
-.second h1 {
+.card_skills{
+    width: 100%;
+    height: 94.4vh;
+    margin: 0 4rem;
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+
+    background-color: #ad392a;
+}
+.card_skills h1 {
     font-size: 10em;
     color: #EDE7DE;
     margin: auto;
@@ -148,7 +165,27 @@ p{
 .fourth{
     width: 100%;
     display: flex;
-    background: #171717;
+    background: #EDE7DE;
+    border-radius: 0%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_contact{
+    width: 100%;
+    height: 94.4vh;
+    margin: 0 4rem;
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+
+    background-color: #F4EEE6;
+}
+.card_contact h1 {
+    font-size: 10em;
+    color: #EDE7DE;
+    margin: auto;
+    text-align: center;
 }
 .fourth h1 {
     font-size: 10em;
