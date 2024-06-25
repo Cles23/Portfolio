@@ -20,7 +20,6 @@ window.addEventListener('scroll', () => {
             current = section.getAttribute('id');
         }
     });
-    console.log(current);
     navLi.forEach(li => {
         li.classList.remove('active');
         if (li.classList.contains(current)) {
@@ -28,3 +27,16 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+function changeNav() {
+    var scrollValue = window.scrollY;
+    var navbar = document.getElementById('navbar');
+    var viewwWidth = window.innerWidth * 0.03;
+    if (scrollValue > viewwWidth) {
+        navbar.classList.add('active');
+    } else {
+        navbar.classList.remove('active');
+    }
+}
+
+window.addEventListener('scroll', changeNav);

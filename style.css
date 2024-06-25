@@ -5,14 +5,20 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    
 }
+::selection {
+    color: #f0ede9;
+    background: #6397D9;
+}
+
 .body{
     background: #EDE7DE;
 }
 h1{
-
     font-family: "dejanire-headline", serif;
     font-weight: 900;
+    font-size: clamp(3.2rem, .5692rem + 8.238vw, 13.75rem)
 }
 p{
     font-family: "nitti-grotesk", sans-serif;
@@ -45,14 +51,18 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: hsla(45, 17%, 95%, .8);
-    backdrop-filter: blur(20px) saturate(1.7);
-    -webkit-backdrop-filter: blur(20px) saturate(1.7);
     margin: 0;
-    padding: calc(1.25rem - 10px);
+    padding: calc(1.29rem - 10px);
     border-radius: 50px;
     transition: all .2s linear;
 }
+.navbar_ul.active{
+    background: hsla(45, 17%, 95%, .8);
+    backdrop-filter: blur(20px) saturate(1.7);
+    -webkit-backdrop-filter: blur(20px) saturate(1.7);
+    transition: all .2s linear;
+}
+
 .navbar_ul li{
     display: flex;
     position: relative;
@@ -61,15 +71,15 @@ p{
     display: flex;
     font-family: "nitti-grotesk", sans-serif;
     font-weight: 500;
-    font-size: 1.20em;
-    color:#791c10;
+    font-size: 1.21em;
+    color:#102079c5;
     margin: 0 3px;
     padding: calc(1rem - 8.3px) 1.27rem;
     
 }
 .navbar_ul li.active{
-    background-color: hsla(0, 0%, 100%, .5);;
     border-radius: 1.5rem;
+    background-color: hsla(0, 0%, 100%, .5);;
     transition: all .2s linear;
 }
 
@@ -79,7 +89,7 @@ p{
 .first{
     min-height: 380px;
     height: 42vw;
-    background: #EDE7DE;
+    background: #f0ede9;
     display: flex;
     align-items: center;
     padding-top: 2em;
@@ -94,11 +104,11 @@ p{
     margin: 0 1em;
 }
 .intro{
-    width: 55%;
+    width: 50%;
     text-align: left;
 }
 .first h1 span{
-    color: #ad392a;
+    color: #6397D9;
     margin: 0;
 }
 .first h1{
@@ -107,11 +117,13 @@ p{
     margin: 0;
     text-align: left;
 }
+
 .intro_content p{
     line-height: 1.4em;
     font-size: clamp(1.15rem, 2vw, 1.7rem);
     color: #383838;
 }
+
 
 .image_content img{
     width: 25vw;
@@ -124,7 +136,7 @@ p{
 .second{
     width: 100%;
     display: flex;
-    background: #EDE7DE;
+    background: #f0ede9;
     border-radius: 0%;
     justify-content: center;
     align-items: center;
@@ -132,15 +144,15 @@ p{
 .card_skills{
     width: 100%;
     height: 94.4vh;
-    margin: 0 4rem;
+    margin: 0 min(4vw, 4rem);
     border-radius: 4rem;
     display: flex;
     align-items: center;
-    background-color: #ad392a;
+    background-color: #1A3B71;
+    
 }
 .card_skills h1 {
-    font-size: 10em;
-    color: #EDE7DE;
+    color: #f0ede9;
     margin: auto;
     text-align: center;
 }
@@ -150,11 +162,10 @@ p{
 .third{
     width: 100%;
     display: flex;
-    background: #EDE7DE;
+    background: #f0ede9;
 }
 .third h1 {
-    font-size: 10em;
-    color: #ad392a;
+    color: #1A3B71;
     margin: auto;
     text-align: center;
     
@@ -165,7 +176,7 @@ p{
 .fourth{
     width: 100%;
     display: flex;
-    background: #EDE7DE;
+    background: #f0ede9;
     border-radius: 0%;
     justify-content: center;
     align-items: center;
@@ -178,18 +189,17 @@ p{
     border-radius: 4rem;
     display: flex;
     align-items: center;
-    background-color: #F4EEE6;
+    background-color: #fff8f2cc;
+    margin: 0 min(4vw, 4rem);
     
 }
 .card_contact h1 {
-    font-size: 10em;
-    color: #EDE7DE;
+    color: #f0ede9;
     margin: auto;
     text-align: center;
 }
 .fourth h1 {
-    font-size: 10em;
-    color: #ad392a;
+    color: #6397D9;
     margin: auto;
     text-align: center;
 }
